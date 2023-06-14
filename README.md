@@ -13,12 +13,15 @@ Tech Stack :-
 - Chakra UI
 - Javascript
 - External Css
-- For backend-server deployment we have used Render.
+- Node Js
+- Express JS
+- Mongo DB
+- For backend-server deployment I used Render.
 
 Steps to start :-
 - npm install 
 - npm run start
-Now site is infront of you
+Now site is infront of you.
 
 <h4>All Users Page :-</h4>
 Here is the All Users Page  which is made by using Chakra UI.
