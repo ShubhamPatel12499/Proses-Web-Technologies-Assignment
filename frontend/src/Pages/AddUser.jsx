@@ -1,4 +1,4 @@
-import {Box, Button, Text,Input, FormLabel, FormControl} from "@chakra-ui/react";
+import {Box, Button, Text,Input, FormLabel, FormControl, Heading} from "@chakra-ui/react";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../Styles/AddUser.css";
@@ -19,8 +19,9 @@ export const AddUser = () => {
   const handleClick=(e)=>{
    e.preventDefault();
   console.log(formData,"formDAta");
-   axios.post("http://localhost:8080/users/addUser",formData).then((r)=>{
-    console.log(r.data,"r data")
+  //  axios.post("http://localhost:8080/users/addUser",formData).then((r)=>{
+    axios.post("https://process-web-backend.onrender.com/users/addUser",formData).then((r)=>{
+
     if(r.data==="please enter valid details"){
       alert("please enter valid details")
     }else{
@@ -29,7 +30,7 @@ export const AddUser = () => {
     }
     
    }).catch((err)=>{
-    alert("some error from backend")
+    alert("Error from Backend")
    })
    
   }
@@ -37,7 +38,7 @@ export const AddUser = () => {
   
   return (
     <Box>  
-       <Text fontSize="20px" marginTop={"20px"} marginBottom={"20px"}>Add Products</Text>
+       <Heading fontSize="30px" marginTop={"20px"} marginBottom={"20px"}>Add Products</Heading>
         <FormControl w="40%" className="form" isRequired>    
           <FormLabel ml="7px" >Enter UserName</FormLabel>
           <Input onChange={handleChange} name="userName" type="string" placeholder="Enter UserName" />
