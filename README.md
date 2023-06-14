@@ -1,7 +1,7 @@
 # Proses-Web-Technologies-Assignment
 User Data App which have crud operations.
 
- <h2>Netlify Link</h2>https://luminous-swan-cc6644.netlify.app/<br/>
+ <h2>Netlify Link</h2>https://6489a7bf8fc6141a7a7ef77c--lovely-dragon-ab074c.netlify.app/<br/>
  
 Working Feautres :-
 - All Users Page
