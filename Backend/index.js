@@ -27,3 +27,5 @@ app.listen(process.env.port,async()=>{
     }
     console.log(`Server is running on ${process.env.port}`)
 })
+
+server:"nodemon index.js"
